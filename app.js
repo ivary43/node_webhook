@@ -11,7 +11,6 @@ app.use(body_parser.json());
 app.get("/", (req, res)=> {
     let options = {
         mode: 'text',
-        pythonPath: '/usr/local/bin/python3',
         args: ['tv']
       };
     ps.PythonShell.run('fl.py', options, function (err, results) { 
