@@ -9,7 +9,7 @@ app.use(body_parser.json());
 
 app.post("/", (req, res)=> {
     console.log(req.body);
-    res.send("Ok");
+    res.send(JSON.stringify(req.body));
 }) 
 
 //server setup
